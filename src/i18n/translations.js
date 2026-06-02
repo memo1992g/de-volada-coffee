@@ -107,6 +107,71 @@ export const translations = {
           'Para intensidad máxima, Levanta Muertos es el indicado. Es fuerte, oscuro e ideal para esos días donde necesitas un empujón serio.',
       },
     },
+    mobileBar: {
+      home: 'Inicio',
+      coffee: 'Cafés',
+      cart: 'Carrito',
+      ai: 'IA',
+      whatsapp: 'WhatsApp',
+    },
+    quiz: {
+      eyebrow: 'Encuentra tu café',
+      title: 'Tu match de café',
+      text: 'Responde rápido y te sugerimos un café para tu momento.',
+      questions: [
+        {
+          id: 'strength',
+          title: '¿Qué intensidad buscas?',
+          options: [
+            { label: 'Suave', value: 'soft' },
+            { label: 'Media', value: 'medium' },
+            { label: 'Fuerte', value: 'strong' },
+          ],
+        },
+        {
+          id: 'moment',
+          title: '¿Para qué momento?',
+          options: [
+            { label: 'Mañana', value: 'morning' },
+            { label: 'Trabajo', value: 'work' },
+            { label: 'Regalo', value: 'gift' },
+          ],
+        },
+        {
+          id: 'method',
+          title: '¿Cómo lo preparas?',
+          options: [
+            { label: 'Espresso', value: 'espresso' },
+            { label: 'Prensa', value: 'press' },
+            { label: 'Pour-over', value: 'pour' },
+          ],
+        },
+      ],
+      resultTitle: 'Recomendación',
+      add: 'Agregar match',
+      reset: 'Cambiar respuestas',
+    },
+    compare: {
+      eyebrow: 'Elige mejor',
+      title: 'Comparador de cafés',
+      columns: ['Café', 'Intensidad', 'Notas', 'Mejor para', 'Método'],
+      rows: [
+        ['Vaya Pues', 'Media', 'Cacao, miel, panela', 'Mañanas suaves', 'Prensa / pour-over'],
+        ['Ponte Las Pilas', 'Alta', 'Caramelo, nuez, cítrico', 'Energía diaria', 'Espresso / moka'],
+        ['Levanta Muertos', 'Muy alta', 'Chocolate oscuro, humo', 'Días pesados', 'Moka / espresso'],
+        ['Te Volaste', 'Especial', 'Dulce, floral, bourbon', 'Regalos premium', 'Pour-over'],
+      ],
+    },
+    subscription: {
+      eyebrow: 'Nunca te quedes sin café',
+      title: 'Suscripción mensual',
+      text: 'Recibe café recién tostado cada mes, con prioridad en lanzamientos y un precio preferencial.',
+      perks: ['10% off demo', 'Entrega mensual', 'Pausar cuando quieras', 'Acceso a microlotes'],
+      cta: 'Agregar plan demo',
+      productName: 'Plan mensual De Volada',
+      productDescription: 'Una bolsa premium cada mes, recién tostada y lista para tu rutina.',
+      price: '$14.00',
+    },
     products: [
       {
         name: 'Vaya Pues',
@@ -416,6 +481,71 @@ export const translations = {
         strong:
           'For maximum intensity, Levanta Muertos is the one. It is bold, dark, and ideal for days when you need a serious push.',
       },
+    },
+    mobileBar: {
+      home: 'Home',
+      coffee: 'Coffee',
+      cart: 'Cart',
+      ai: 'AI',
+      whatsapp: 'WhatsApp',
+    },
+    quiz: {
+      eyebrow: 'Find your coffee',
+      title: 'Your coffee match',
+      text: 'Answer quickly and we will suggest a coffee for your moment.',
+      questions: [
+        {
+          id: 'strength',
+          title: 'What intensity do you want?',
+          options: [
+            { label: 'Smooth', value: 'soft' },
+            { label: 'Medium', value: 'medium' },
+            { label: 'Strong', value: 'strong' },
+          ],
+        },
+        {
+          id: 'moment',
+          title: 'What is the moment?',
+          options: [
+            { label: 'Morning', value: 'morning' },
+            { label: 'Work', value: 'work' },
+            { label: 'Gift', value: 'gift' },
+          ],
+        },
+        {
+          id: 'method',
+          title: 'How do you brew?',
+          options: [
+            { label: 'Espresso', value: 'espresso' },
+            { label: 'French press', value: 'press' },
+            { label: 'Pour-over', value: 'pour' },
+          ],
+        },
+      ],
+      resultTitle: 'Recommendation',
+      add: 'Add match',
+      reset: 'Change answers',
+    },
+    compare: {
+      eyebrow: 'Choose better',
+      title: 'Coffee comparison',
+      columns: ['Coffee', 'Intensity', 'Notes', 'Best for', 'Method'],
+      rows: [
+        ['Vaya Pues', 'Medium', 'Cacao, honey, panela', 'Smooth mornings', 'Press / pour-over'],
+        ['Ponte Las Pilas', 'High', 'Caramel, walnut, citrus', 'Daily energy', 'Espresso / moka'],
+        ['Levanta Muertos', 'Very high', 'Dark chocolate, smoke', 'Heavy days', 'Moka / espresso'],
+        ['Te Volaste', 'Special', 'Sweet, floral, bourbon', 'Premium gifts', 'Pour-over'],
+      ],
+    },
+    subscription: {
+      eyebrow: 'Never run out',
+      title: 'Monthly subscription',
+      text: 'Get freshly roasted coffee every month, with launch priority and preferred pricing.',
+      perks: ['10% off demo', 'Monthly delivery', 'Pause anytime', 'Microlot access'],
+      cta: 'Add demo plan',
+      productName: 'De Volada monthly plan',
+      productDescription: 'One premium bag every month, freshly roasted and ready for your routine.',
+      price: '$14.00',
     },
     products: [
       {

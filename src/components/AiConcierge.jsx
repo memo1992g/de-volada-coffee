@@ -29,10 +29,9 @@ function getProductSlug(key) {
   return map[key] || map.default;
 }
 
-export default function AiConcierge() {
+export default function AiConcierge({ isOpen, setIsOpen }) {
   const { addItem } = useCart();
   const { t } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [recommendationSlug, setRecommendationSlug] = useState('ponte-las-pilas');
   const [messages, setMessages] = useState(() => [
