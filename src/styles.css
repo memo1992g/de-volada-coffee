@@ -2663,7 +2663,7 @@ button {
   }
 
   .section {
-    padding: 46px 0;
+    padding: 34px 0;
   }
 
   .product-grid,
@@ -2675,13 +2675,246 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .product-grid,
+  .testimonial-grid,
+  .trust-grid {
+    display: grid;
+    grid-auto-columns: minmax(272px, 84vw);
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    gap: 14px;
+    margin-right: -14px;
+    padding: 4px 14px 16px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .product-grid::-webkit-scrollbar,
+  .testimonial-grid::-webkit-scrollbar,
+  .trust-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-card,
+  .testimonial-card,
+  .trust-card {
+    scroll-snap-align: start;
+  }
+
+  .product-card {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .product-card__media {
+    min-height: 182px;
+    margin-bottom: 12px;
+  }
+
+  .coffee-bag {
+    width: 112px;
+    height: 168px;
+  }
+
+  .coffee-bag__seal {
+    top: 38px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .coffee-bag__name {
+    bottom: 22px;
+    font-size: 1.32rem;
+  }
+
+  .product-card p {
+    min-height: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .product-meta {
+    display: none;
+  }
+
+  .product-card strong {
+    margin: 8px 0 10px;
+  }
+
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  .section-heading h2,
+  .quiz-copy h2,
+  .subscription-card h2 {
+    font-size: clamp(2.6rem, 13vw, 3.8rem);
+  }
+
   .journey-card {
     min-height: auto;
-    padding: 24px;
+    padding: 22px;
+  }
+
+  .journey-steps {
+    display: grid;
+    grid-auto-columns: minmax(270px, 84vw);
+    grid-auto-flow: column;
+    gap: 14px;
+    margin-right: -14px;
+    padding: 4px 14px 16px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .journey-steps::-webkit-scrollbar {
+    display: none;
+  }
+
+  .journey-card {
+    scroll-snap-align: start;
+  }
+
+  .journey-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .journey-card p,
+  .trust-card p,
+  .quiz-copy p,
+  .subscription-card p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
   }
 
   .compare-table {
     min-width: 0;
+  }
+
+  .compare-section {
+    display: none;
+  }
+
+  .faq-panel {
+    display: none;
+  }
+
+  .impact-counters {
+    padding: 36px 0;
+  }
+
+  .counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .counter-card {
+    padding: 18px 10px;
+    border-radius: 18px;
+  }
+
+  .counter-card strong {
+    font-size: 2.7rem;
+  }
+
+  .counter-card p {
+    font-size: 0.62rem;
+  }
+
+  .quiz-layout {
+    gap: 14px;
+  }
+
+  .quiz-copy,
+  .quiz-card,
+  .quiz-result,
+  .subscription-card {
+    border-radius: 22px;
+  }
+
+  .quiz-copy,
+  .quiz-result,
+  .subscription-card {
+    padding: 22px;
+  }
+
+  .quiz-card {
+    padding: 14px;
+  }
+
+  .quiz-question {
+    padding: 12px;
+  }
+
+  .quiz-question h3 {
+    margin-bottom: 9px;
+    font-size: 0.68rem;
+  }
+
+  .quiz-question button {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.62rem;
+  }
+
+  .subscription-section {
+    padding: 22px 0 42px;
+  }
+
+  .subscription-card ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .subscription-card li {
+    font-size: 0.76rem;
+  }
+
+  .benefits__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit {
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .benefit svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .benefit h3 {
+    font-size: 0.62rem;
+  }
+
+  .benefit p {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .footer__grid {
+    gap: 20px;
+    padding: 34px 0;
+  }
+
+  .footer__column {
+    display: none;
+  }
+
+  .footer__brand p {
+    max-width: none;
   }
 
   .compare-table thead {
