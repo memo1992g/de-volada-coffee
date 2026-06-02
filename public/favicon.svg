@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="64" fill="#050505"/>
+  <circle cx="64" cy="64" r="55" fill="none" stroke="#f2b632" stroke-width="5"/>
+  <circle cx="64" cy="64" r="42" fill="#07110f" stroke="#00c7c7" stroke-width="2"/>
+  <text x="64" y="62" text-anchor="middle" fill="#f7f5ef" font-family="Impact, sans-serif" font-size="28" letter-spacing="2">DV</text>
+  <text x="64" y="84" text-anchor="middle" fill="#f2b632" font-family="Georgia, serif" font-size="10">COFFEE</text>
+</svg>

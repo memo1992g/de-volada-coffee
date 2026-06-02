@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <radialGradient id="glow" cx="72%" cy="44%" r="38%">
+      <stop offset="0%" stop-color="#f2b632" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#050505"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <circle cx="1130" cy="480" r="185" fill="#090909" stroke="#d6a72c" stroke-width="4"/>
+  <ellipse cx="1130" cy="420" rx="180" ry="46" fill="#6f3a16"/>
+  <circle cx="1130" cy="520" r="82" fill="#050505" stroke="#f2b632" stroke-width="4"/>
+  <text x="1130" y="532" text-anchor="middle" fill="#f7f5ef" font-family="Impact, sans-serif" font-size="38">DE VOLADA</text>
+  <text x="140" y="310" fill="#f7f5ef" font-family="Impact, sans-serif" font-size="110" letter-spacing="5">CAFÉ QUE TE</text>
+  <text x="140" y="435" fill="#f7f5ef" font-family="Impact, sans-serif" font-size="110" letter-spacing="5">LEVANTA DE</text>
+  <text x="140" y="570" fill="#f2b632" font-family="Impact, sans-serif" font-size="130" letter-spacing="6">VOLADA</text>
+</svg>
