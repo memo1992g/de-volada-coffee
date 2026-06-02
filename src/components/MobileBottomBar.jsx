@@ -23,9 +23,9 @@ export default function MobileBottomBar({ onOpenAi }) {
         {t.mobileBar.cart}
         <span>{totals.count}</span>
       </button>
-      <button type="button" onClick={onOpenAi}>
+      <button className="mobile-bottom-bar__ai" type="button" onClick={onOpenAi}>
         <Bot size={19} />
-        {t.mobileBar.ai}
+        Coffee IA
       </button>
       <a href={`https://wa.me/${WHATSAPP_ORDER_NUMBER}`} target="_blank" rel="noreferrer">
         <MessageCircle size={19} />

@@ -3003,6 +3003,33 @@ button {
     font-size: 0.62rem;
   }
 
+  .mobile-bottom-bar__ai {
+    background:
+      radial-gradient(circle at 50% 0%, rgba(0, 199, 199, 0.32), transparent 70%),
+      linear-gradient(145deg, rgba(0, 199, 199, 0.18), rgba(242, 182, 50, 0.08)) !important;
+    color: #8ff8f2 !important;
+    box-shadow: inset 0 0 0 1px rgba(0, 199, 199, 0.24), 0 0 24px rgba(0, 199, 199, 0.16);
+    animation: mobileAiPulse 2.4s ease-in-out infinite;
+  }
+
+  .mobile-bottom-bar__ai svg {
+    color: #8ff8f2;
+    filter: drop-shadow(0 0 8px rgba(0, 199, 199, 0.48));
+  }
+
+  @keyframes mobileAiPulse {
+    0%,
+    100% {
+      transform: translateY(0);
+      box-shadow: inset 0 0 0 1px rgba(0, 199, 199, 0.24), 0 0 18px rgba(0, 199, 199, 0.12);
+    }
+
+    50% {
+      transform: translateY(-3px);
+      box-shadow: inset 0 0 0 1px rgba(0, 199, 199, 0.42), 0 0 30px rgba(0, 199, 199, 0.28);
+    }
+  }
+
   body {
     padding-bottom: 76px;
   }
@@ -3053,11 +3080,7 @@ button {
   }
 
   .ai-launcher {
-    left: 14px;
-    bottom: 92px;
-    min-height: 44px;
-    padding: 0 15px;
-    z-index: 38;
+    display: none;
   }
 
   .ai-panel {
