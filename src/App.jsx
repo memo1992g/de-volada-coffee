@@ -9,6 +9,7 @@ import Newsletter from './components/Newsletter.jsx';
 import Footer from './components/Footer.jsx';
 import CartDrawer from './components/CartDrawer.jsx';
 import CartToast from './components/CartToast.jsx';
+import AiConcierge from './components/AiConcierge.jsx';
 import ImpactCounters from './components/ImpactCounters.jsx';
 import RoastJourney from './components/RoastJourney.jsx';
 import SmoothScroll from './components/SmoothScroll.jsx';
@@ -34,6 +35,7 @@ export default function App() {
           <Footer />
           <CartDrawer />
           <CartToast />
+          <AiConcierge />
         </main>
       </CartProvider>
     </LanguageProvider>

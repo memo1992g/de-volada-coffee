@@ -75,6 +75,38 @@ export const translations = {
       newOrder: 'Crear otro pedido',
       quantity: 'Cantidad',
     },
+    ai: {
+      launcher: 'Coffee AI',
+      eyebrow: 'Demo IA',
+      title: 'Coffee AI Concierge',
+      disclaimer: 'Modo demostrativo: aún no está conectado a una IA real.',
+      intro:
+        'Cuéntame qué necesitas y te recomiendo un café de De Volada para tu momento.',
+      inputPlaceholder: 'Escribe: quiero algo fuerte...',
+      send: 'Enviar',
+      addRecommendation: 'Agregar recomendado',
+      quickPrompts: [
+        'Necesito energía',
+        'Quiero algo suave',
+        'Recomiéndame un regalo',
+        'Quiero apoyar el impacto',
+      ],
+      botName: 'De Volada AI',
+      defaultResponse:
+        'Para ese perfil te recomiendo Ponte Las Pilas: tiene cuerpo, energía y notas de caramelo que funcionan muy bien para empezar fuerte.',
+      responses: {
+        energy:
+          'Si buscas energía real, mi recomendación es Ponte Las Pilas. Tiene más cuerpo, intensidad alta y es perfecto para mañanas largas o trabajo pesado.',
+        soft:
+          'Para algo suave y balanceado, Vaya Pues es el match. Es amigable, redondo y perfecto para empezar el día sin sentirlo demasiado fuerte.',
+        gift:
+          'Para regalo, Te Volaste se siente más especial: edición limitada, perfil dulce/floral y una presentación que se percibe premium.',
+        impact:
+          'Si quieres comprar con propósito, cualquier café suma al impacto. Yo elegiría Ponte Las Pilas: gran sabor, alta rotación y excelente para compartir la historia.',
+        strong:
+          'Para intensidad máxima, Levanta Muertos es el indicado. Es fuerte, oscuro e ideal para esos días donde necesitas un empujón serio.',
+      },
+    },
     products: [
       {
         name: 'Vaya Pues',
@@ -352,6 +384,38 @@ export const translations = {
       orderNumber: 'Order',
       newOrder: 'Create another order',
       quantity: 'Quantity',
+    },
+    ai: {
+      launcher: 'Coffee AI',
+      eyebrow: 'AI Demo',
+      title: 'Coffee AI Concierge',
+      disclaimer: 'Demo mode: not connected to a real AI yet.',
+      intro:
+        'Tell me what you need and I will recommend a De Volada coffee for your moment.',
+      inputPlaceholder: 'Type: I want something strong...',
+      send: 'Send',
+      addRecommendation: 'Add recommendation',
+      quickPrompts: [
+        'I need energy',
+        'I want something smooth',
+        'Recommend a gift',
+        'I want to support impact',
+      ],
+      botName: 'De Volada AI',
+      defaultResponse:
+        'For that profile I recommend Ponte Las Pilas: it has body, energy, and caramel notes that work beautifully when you want to start strong.',
+      responses: {
+        energy:
+          'If you want real energy, my pick is Ponte Las Pilas. It has more body, high intensity, and works perfectly for long mornings or heavy work.',
+        soft:
+          'For something smooth and balanced, Vaya Pues is the match. It is friendly, rounded, and perfect to start the day without going too bold.',
+        gift:
+          'For a gift, Te Volaste feels more special: limited edition, sweet/floral profile, and a premium presentation.',
+        impact:
+          'If you want to buy with purpose, every coffee supports the impact. I would choose Ponte Las Pilas: great flavor, high rotation, and easy to share the story.',
+        strong:
+          'For maximum intensity, Levanta Muertos is the one. It is bold, dark, and ideal for days when you need a serious push.',
+      },
     },
     products: [
       {
