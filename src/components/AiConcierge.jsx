@@ -65,6 +65,11 @@ export default function AiConcierge() {
     setInput('');
   };
 
+  const addRecommendedProduct = () => {
+    setIsOpen(false);
+    window.setTimeout(() => addItem(recommendedProduct), 180);
+  };
+
   return (
     <>
       <motion.button
@@ -115,7 +120,7 @@ export default function AiConcierge() {
               <span>{recommendedProduct.badge}</span>
               <h3>{recommendedProduct.name}</h3>
               <p>{recommendedProduct.description}</p>
-              <button type="button" onClick={() => addItem(recommendedProduct)}>
+              <button type="button" onClick={addRecommendedProduct}>
                 {t.ai.addRecommendation}
               </button>
             </div>
