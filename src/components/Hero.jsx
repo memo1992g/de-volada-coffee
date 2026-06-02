@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { Bean, MapPin, Volume2, VolumeX, Zap } from 'lucide-react';
 import { fadeIn, fadeUp, staggerContainer } from '../animations.js';
 import { useLanguage } from '../i18n/LanguageContext.jsx';
@@ -9,6 +9,10 @@ export default function Hero() {
   const { t } = useLanguage();
   const videoRef = useRef(null);
   const [soundEnabled, setSoundEnabled] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const contentY = useTransform(scrollYProgress, [0, 0.35], [0, -86]);
+  const videoScale = useTransform(scrollYProgress, [0, 0.35], [1, 1.12]);
+  const videoY = useTransform(scrollYProgress, [0, 0.35], [0, 70]);
 
   const syncVideoSound = (enabled) => {
     const video = videoRef.current;
@@ -55,17 +59,18 @@ export default function Hero() {
 
   return (
     <section className="hero" id="inicio">
-      <div className="hero__video" aria-hidden="true">
+      <motion.div className="hero__video" aria-hidden="true" style={{ scale: videoScale, y: videoY }}>
         <video ref={videoRef} autoPlay loop playsInline preload="auto" poster="/posters/hero-poster.svg">
           <source src="/videos/hero-coffee.mp4" type="video/mp4" />
         </video>
-      </div>
+      </motion.div>
       <button className="hero__sound-toggle" type="button" onClick={toggleSound}>
         {soundEnabled ? <Volume2 size={18} /> : <VolumeX size={18} />}
         {soundEnabled ? t.hero.soundOn : t.hero.soundOff}
       </button>
       <motion.div
         className="hero__content container"
+        style={{ y: shouldReduceMotion ? 0 : contentY }}
         variants={shouldReduceMotion ? undefined : staggerContainer}
         initial="hidden"
         animate="visible"

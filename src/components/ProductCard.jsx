@@ -8,9 +8,16 @@ export default function ProductCard({ product }) {
   const { t } = useLanguage();
   const { addItem } = useCart();
 
+  const handlePointerMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    event.currentTarget.style.setProperty('--spotlight-x', `${event.clientX - rect.left}px`);
+    event.currentTarget.style.setProperty('--spotlight-y', `${event.clientY - rect.top}px`);
+  };
+
   return (
     <motion.article
       className="product-card"
+      onPointerMove={handlePointerMove}
       variants={cardReveal}
       whileHover={{ y: -10, scale: 1.015 }}
       whileTap={{ scale: 0.99 }}

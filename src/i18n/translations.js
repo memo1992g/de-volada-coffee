@@ -137,6 +137,32 @@ export const translations = {
         'Parte de cada compra apoya programas educativos y oportunidades para niños en El Salvador.',
       impactCta: 'Conoce nuestro impacto',
     },
+    journey: {
+      eyebrow: 'Del origen a tu taza',
+      title: 'Roast journey',
+      steps: [
+        {
+          label: '01',
+          title: 'Fincas de El Salvador',
+          text: 'Seleccionamos granos con carácter, altura y dulzura natural.',
+        },
+        {
+          label: '02',
+          title: 'Tostado CLT',
+          text: 'Cada lote se tuesta en pequeño volumen para cuidar cuerpo, aroma y consistencia.',
+        },
+        {
+          label: '03',
+          title: 'Empaque fresco',
+          text: 'Sellamos el café para conservar notas, energía y ese golpe de primera taza.',
+        },
+        {
+          label: '04',
+          title: 'De volada a tu día',
+          text: 'Lo preparas, respiras, tomas el primer sorbo y arrancas con propósito.',
+        },
+      ],
+    },
     benefits: [
       {
         title: 'Envío nacional',
@@ -189,6 +215,16 @@ export const translations = {
           question: '¿Los productos usan imágenes reales?',
           answer: 'Aún son mockups premium. El siguiente salto visual sería usar fotos reales de bolsas y producto.',
         },
+      ],
+    },
+    counters: {
+      eyebrow: 'Impacto real',
+      title: 'Cada bolsa mueve algo',
+      items: [
+        { value: 503, suffix: '+', label: 'tazas con propósito' },
+        { value: 48, suffix: 'h', label: 'ventana de tostado fresco' },
+        { value: 12, suffix: 'oz', label: 'por bolsa premium' },
+        { value: 5, suffix: '%', label: 'impacto estimado por compra' },
       ],
     },
     testimonialsSection: {
@@ -379,6 +415,32 @@ export const translations = {
         'A portion of every purchase supports educational programs and opportunities for children in El Salvador.',
       impactCta: 'Explore our impact',
     },
+    journey: {
+      eyebrow: 'From origin to your cup',
+      title: 'Roast journey',
+      steps: [
+        {
+          label: '01',
+          title: 'El Salvador farms',
+          text: 'We select beans with character, altitude, and natural sweetness.',
+        },
+        {
+          label: '02',
+          title: 'CLT roast',
+          text: 'Each batch is roasted small to protect body, aroma, and consistency.',
+        },
+        {
+          label: '03',
+          title: 'Fresh packing',
+          text: 'We seal the coffee to preserve notes, energy, and that first-cup punch.',
+        },
+        {
+          label: '04',
+          title: 'De volada to your day',
+          text: 'You brew, breathe, take the first sip, and start with purpose.',
+        },
+      ],
+    },
     benefits: [
       {
         title: 'National shipping',
@@ -431,6 +493,16 @@ export const translations = {
           question: 'Are the product images real?',
           answer: 'They are premium mockups for now. The next visual upgrade would be real bag and product photos.',
         },
+      ],
+    },
+    counters: {
+      eyebrow: 'Real impact',
+      title: 'Every bag moves something',
+      items: [
+        { value: 503, suffix: '+', label: 'purpose-driven cups' },
+        { value: 48, suffix: 'h', label: 'fresh roast window' },
+        { value: 12, suffix: 'oz', label: 'per premium bag' },
+        { value: 5, suffix: '%', label: 'estimated impact per order' },
       ],
     },
     testimonialsSection: {
