@@ -72,16 +72,21 @@ export default function AiConcierge() {
 
   return (
     <>
-      <motion.button
-        className="ai-launcher"
-        type="button"
-        onClick={() => setIsOpen(true)}
-        whileHover={{ y: -4, scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-      >
-        <Sparkles size={18} />
-        {t.ai.launcher}
-      </motion.button>
+      {!isOpen && (
+        <motion.button
+          className="ai-launcher"
+          type="button"
+          onClick={() => setIsOpen(true)}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 12 }}
+          whileHover={{ y: -4, scale: 1.03 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          <Sparkles size={18} />
+          {t.ai.launcher}
+        </motion.button>
+      )}
 
       <AnimatePresence>
         {isOpen && (
