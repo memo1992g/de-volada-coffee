@@ -3054,14 +3054,15 @@ button {
 
   .ai-launcher {
     left: 14px;
-    bottom: 14px;
+    bottom: 92px;
     min-height: 44px;
     padding: 0 15px;
+    z-index: 38;
   }
 
   .ai-panel {
     right: 10px;
-    bottom: 10px;
+    bottom: 88px;
     left: 10px;
     width: auto;
     max-height: min(78vh, 650px);
